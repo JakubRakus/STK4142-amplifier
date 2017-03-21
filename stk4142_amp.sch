@@ -1,0 +1,193 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stk4142_amp-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STK4142 U?
+U 1 1 58D1B63A
+P 3650 2050
+F 0 "U?" H 4150 2350 50  0000 L CNN
+F 1 "STK4142" H 4050 2250 50  0000 L CNN
+F 2 "SIP18" H 3650 2050 50  0001 C CIN
+F 3 "" H 3750 2050 50  0001 C CNN
+	1    3650 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L STK4142 U?
+U 2 1 58D1B6E8
+P 6500 2050
+F 0 "U?" H 6000 2350 50  0000 C CNN
+F 1 "STK4142" H 6000 2250 50  0000 C CNN
+F 2 "SIP18" H 6500 2050 50  0001 C CIN
+F 3 "" H 6600 2050 50  0001 C CNN
+	2    6500 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 58D1B914
+P 3850 1050
+F 0 "#PWR?" H 3850 900 50  0001 C CNN
+F 1 "VCC" H 3867 1223 50  0000 C CNN
+F 2 "" H 3850 1050 50  0001 C CNN
+F 3 "" H 3850 1050 50  0001 C CNN
+	1    3850 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1050 3850 1700
+$Comp
+L CP1_Small C?
+U 1 1 58D1BA20
+P 3350 1200
+F 0 "C?" H 3441 1246 50  0000 L CNN
+F 1 "100u" H 3441 1155 50  0000 L CNN
+F 2 "" H 3350 1200 50  0001 C CNN
+F 3 "" H 3350 1200 50  0001 C CNN
+	1    3350 1200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1550 3550 1100
+Wire Wire Line
+	3350 1100 3600 1100
+$Comp
+L R_Small R?
+U 1 1 58D1BB01
+P 3700 1100
+F 0 "R?" V 3504 1100 50  0000 C CNN
+F 1 "100" V 3595 1100 50  0000 C CNN
+F 2 "" H 3700 1100 50  0001 C CNN
+F 3 "" H 3700 1100 50  0001 C CNN
+	1    3700 1100
+	0    1    1    0   
+$EndComp
+Connection ~ 3550 1100
+Wire Wire Line
+	3800 1100 4050 1100
+Connection ~ 3850 1100
+$Comp
+L GND #PWR?
+U 1 1 58D1BC55
+P 3350 1350
+F 0 "#PWR?" H 3350 1100 50  0001 C CNN
+F 1 "GND" H 3355 1177 50  0000 C CNN
+F 2 "" H 3350 1350 50  0001 C CNN
+F 3 "" H 3350 1350 50  0001 C CNN
+	1    3350 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1350 3350 1300
+$Comp
+L GND #PWR?
+U 1 1 58D1BCB6
+P 4050 1350
+F 0 "#PWR?" H 4050 1100 50  0001 C CNN
+F 1 "GND" H 4055 1177 50  0000 C CNN
+F 2 "" H 4050 1350 50  0001 C CNN
+F 3 "" H 4050 1350 50  0001 C CNN
+	1    4050 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1_Small C?
+U 1 1 58D1BCC9
+P 4050 1200
+F 0 "C?" H 4141 1246 50  0000 L CNN
+F 1 "10u" H 4141 1155 50  0000 L CNN
+F 2 "" H 4050 1200 50  0001 C CNN
+F 3 "" H 4050 1200 50  0001 C CNN
+	1    4050 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1350 4050 1300
+Wire Wire Line
+	4050 2300 4050 2400
+Wire Wire Line
+	4050 2400 6200 2400
+Wire Wire Line
+	6200 2300 6200 2450
+$Comp
+L VEE #PWR?
+U 1 1 58D1C2FB
+P 6200 2450
+F 0 "#PWR?" H 6200 2300 50  0001 C CNN
+F 1 "VEE" H 6218 2623 50  0000 C CNN
+F 2 "" H 6200 2450 50  0001 C CNN
+F 3 "" H 6200 2450 50  0001 C CNN
+	1    6200 2450
+	-1   0    0    1   
+$EndComp
+Connection ~ 6200 2400
+$Comp
+L CP1_Small C?
+U 1 1 58D1C3A7
+P 6000 2550
+F 0 "C?" H 5909 2504 50  0000 R CNN
+F 1 "10u" H 5909 2595 50  0000 R CNN
+F 2 "" H 6000 2550 50  0001 C CNN
+F 3 "" H 6000 2550 50  0001 C CNN
+	1    6000 2550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6000 2450 6000 2400
+Connection ~ 6000 2400
+$Comp
+L GND #PWR?
+U 1 1 58D1C499
+P 6000 2700
+F 0 "#PWR?" H 6000 2450 50  0001 C CNN
+F 1 "GND" H 6005 2527 50  0000 C CNN
+F 2 "" H 6000 2700 50  0001 C CNN
+F 3 "" H 6000 2700 50  0001 C CNN
+	1    6000 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2700 6000 2650
+$EndSCHEMATC
